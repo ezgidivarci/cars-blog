@@ -1,0 +1,293 @@
+/*------- GENERAL--------- */
+
+@font-face {
+  font-family: "Raleway";
+  src: url("../fonts/Raleway-Regular.ttf");
+}
+
+body {
+  background: rgb(253, 253, 253);
+  color: black;
+  font: 14px / 28px;
+  font-family: "Raleway", arial;
+}
+h1 {
+  font-size: 52px;
+  letter-spacing: 4px;
+  margin-bottom: 20px;
+}
+.section-header {
+  background: #840909;
+  border-bottom: 6px solid #000;
+  height: 60px;
+  color: white;
+  display: inline-block;
+  line-height: 60px;
+  font-size: 24px;
+  padding: 5px 40px;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+h3 {
+  font-size: 16px;
+  color: #500d16;
+  transition: all 0.5s ease;
+}
+
+.section-area {
+  padding: 80px 0;
+}
+
+/* ------------GRID---------*/
+.container {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+}
+
+.features-body .container {
+  justify-content: space-between;
+}
+
+.col3 {
+  flex-grow: 1;
+  width: 33%;
+}
+
+.engine-body .container {
+  justify-content: space-between;
+}
+.col2 {
+  flex-grow: 1;
+  width: 50%;
+  padding: 20px;
+}
+/* -----------HOME------------- */
+header .logo {
+  margin-right: auto;
+}
+
+header .logo img {
+  display: block;
+  height: 100px;
+}
+
+.menu li {
+  float: left;
+}
+
+.menu li a {
+  padding: 27px 40px;
+  font-size: 23px;
+  letter-spacing: 2px;
+  display: block;
+  text-decoration: none;
+  color: #333;
+  transition: all 0.5s ease;
+}
+
+.menu li:hover a {
+  background: #840909;
+  color: #fff;
+}
+
+#main-slider {
+  height: 650px;
+  background: url("../img/main5.jpg") center center no-repeat;
+  background-size: cover;
+}
+.slider {
+  width: 100%;
+}
+
+#main-caption {
+  height: 650px;
+  background: rgba(0, 0, 0, 0.5);
+}
+.caption {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  color: #fff;
+}
+
+.features-top {
+  text-align: center;
+}
+.item {
+  padding: 10px 20px;
+}
+
+.zoom {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  width: 100%;
+  vertical-align: top;
+}
+
+.zoom img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: all 0.5s ease;
+}
+
+.item-text {
+  text-align: center;
+  padding: 5px;
+  border: 2px solid #500d16;
+}
+
+.item:hover .zoom img {
+  transform: scale(1.2);
+}
+
+.item:hover h3 {
+  color: white;
+}
+
+.item:hover .item-text {
+  background-color: #840909;
+  color: white;
+  transition: all 0.5s ease;
+}
+.btn-details {
+  color: #840909;
+  margin-bottom: 30px;
+  padding: 5px 10px;
+  text-decoration: none;
+  border: 1px solid #840909;
+  transition: all 0.5s ease;
+}
+.item:hover .btn-details {
+  color: white;
+  border: 1px solid white;
+}
+
+.item-text p {
+  line-height: 2;
+  margin: 20px 7px;
+}
+
+#parallax {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../img/parallax.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+
+.engine-top {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.engine-container {
+  position: relative;
+  width: 100%;
+}
+.image-over {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.engine-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(80, 13, 22, 0.7);
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: all 0.5s ease;
+}
+
+.engine-overlay2 {
+  position: absolute;
+  bottom: 0;
+  left: 100%;
+  right: 0;
+  background-color: rgba(80, 13, 22, 0.7);
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: all 0.5s ease;
+}
+
+.engine-container:hover .engine-overlay {
+  width: 100%;
+}
+.engine-container:hover .engine-overlay2 {
+  width: 100%;
+  left: 0;
+}
+
+.engine-text {
+  white-space: nowrap; /*açılıştaki alt alta gelmeyi önlüyor yazını */
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* yazıyı tam ortalamak için */
+}
+
+footer {
+  background-color: #840909;
+  text-align: center;
+}
+.footer-item {
+  padding: 20px;
+}
+
+.footer-item img {
+  height: 120px;
+}
+
+footer h3 {
+  color: white;
+  font-size: 28px;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+footer .fa {
+  font-size: 40px;
+  color: #95a5a6;
+  line-height: 100px;
+
+  transition: all 0.5s ease;
+}
+footer .fa:hover {
+  color: white;
+}
+
+footer p {
+  color: #95a5a6;
+  line-height: 30px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #95a5a6;
+  letter-spacing: 2px;
+  font-size: 25px;
+  line-height: 40px;
+  transition: all 0.5s ease;
+}
+.footer-links a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.social-links li {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+}
