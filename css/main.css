@@ -180,6 +180,9 @@ header .logo img {
   background-position: center;
   text-align: center;
 }
+.parallax-top p {
+  color: white;
+}
 
 .engine-top {
   margin-top: 50px;
@@ -229,13 +232,13 @@ header .logo img {
 }
 
 .engine-text {
-  white-space: nowrap; /*açılıştaki alt alta gelmeyi önlüyor yazını */
+  white-space: nowrap;
   color: white;
   font-size: 20px;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); /* yazıyı tam ortalamak için */
+  transform: translate(-50%, -50%);
 }
 
 footer {
@@ -290,4 +293,118 @@ footer p {
   display: inline-block;
   width: 50px;
   height: 50px;
+}
+
+/* CARS */
+#cars-slider {
+  height: 350px;
+  background: url("../img/parallax.jpg") center center no-repeat;
+  background-size: cover;
+}
+
+#cars-caption {
+  height: 350px;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+#inspect {
+  background-color: #f5f5f5;
+}
+.inspect-top {
+  text-align: center;
+}
+.inspect-body .col2 {
+  display: flex;
+}
+.inspect-image {
+  width: 40%;
+}
+.inspect-image img {
+  width: 100%;
+  height: auto;
+}
+.inspect-text {
+  width: 60%;
+  padding-left: 10px;
+  line-height: 1.8;
+}
+.date {
+  color: #333;
+  font-size: 16px;
+  font-style: italic;
+}
+h4 {
+  color: #500d16;
+  font-size: 20px;
+  font-weight: bold;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+.inspect-text a {
+  float: right;
+  font-weight: bold;
+  text-decoration: none;
+  color: #500d16;
+}
+.inspect-text a:hover {
+  text-decoration: underline;
+}
+.projectx-top {
+  text-align: center;
+}
+
+#projectx .container-fluid {
+  height: 700px;
+  background: url("../img/projectx.jpg") center center no-repeat;
+  background-size: cover;
+}
+.captionpx {
+  display: flex;
+  background: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 700px;
+}
+.projectx-info {
+  position: relative;
+  text-align: left;
+  top: 30%;
+  line-height: 1.7;
+  padding-left: 3%;
+}
+.projectx-title {
+  padding-left: 3%;
+  color: #840909;
+  font-size: 32px;
+  letter-spacing: 2px;
+  text-shadow: 0 0 4px #ffffff;
+}
+.projectx-button {
+  margin-left: 3%;
+  background-color: #840909;
+  cursor: pointer;
+  color: white;
+  padding: 20px 40px;
+  margin-top: 20px;
+  letter-spacing: 2px;
+  transition: all 0.5s ease;
+}
+.projectx-button:hover {
+  background-color: white;
+  color: #840909;
+}
+.projectx-info {
+  color: white;
+}
+.projectx-highlight {
+  margin-left: 60%;
+  display: inline-block;
+  background-color: #840909;
+  padding: 30px;
+}
+.container-fluid .col2 {
+  padding: 0;
+}
+.projectx-detail li {
+  color: white;
+  line-height: 1.9;
 }
