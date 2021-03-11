@@ -33,12 +33,20 @@ h1 {
   margin-bottom: 20px;
 }
 h3 {
-  font-size: 16px;
+  padding-top: 10px;
+  font-size: 20px;
   color: #500d16;
   transition: all 0.5s ease;
+  font-weight: bold;
 }
 
 .section-area {
+  padding-top: 50px;
+  padding-bottom: 10px;
+  margin-top: 50px;
+}
+
+.section-area1 {
   padding: 80px 0;
 }
 
@@ -81,8 +89,8 @@ header .logo img {
 }
 
 .menu li a {
-  padding: 27px 40px;
-  font-size: 23px;
+  padding: 27px 33px;
+  font-size: 22px;
   letter-spacing: 2px;
   display: block;
   text-decoration: none;
@@ -249,11 +257,10 @@ footer {
   background-color: #840909;
   text-align: center;
 }
-.footer-item {
-}
 
 .footer-item img {
   height: 120px;
+  margin-bottom: 40px;
 }
 
 footer h3 {
@@ -275,8 +282,10 @@ footer .fa:hover {
 }
 
 footer p {
-  color: #95a5a6;
+  color: #cad7d8;
   line-height: 30px;
+  font-weight: bold;
+  text-align: center;
 }
 
 .footer-links a {
@@ -596,6 +605,7 @@ h4 {
 }
 .contact-form {
   margin: 0 auto;
+  margin-top: 25px;
   width: 60%;
 }
 .form-item {
@@ -639,6 +649,12 @@ h4 {
 /*----- MEDIA QUERIES-----*/
 
 @media screen and (max-width: 960px) {
+  .menu li a {
+    padding: 27px 27px;
+    font-size: 20px;
+    letter-spacing: 1px;
+  }
+
   .caption h1 {
     color: red;
     font-size: 32px;
