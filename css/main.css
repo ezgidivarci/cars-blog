@@ -246,7 +246,7 @@ header .logo img {
 .engine-text {
   white-space: nowrap;
   color: white;
-  font-size: 20px;
+  font-size: 18px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -366,6 +366,7 @@ h4 {
 }
 
 #projectx .container-fluid {
+  margin-top: 30px;
   height: 800px;
   background: url("../img/proje.jpg") center center no-repeat;
   background-size: cover;
@@ -403,9 +404,7 @@ h4 {
   background-color: white;
   color: #840909;
 }
-.projectx-info {
-  color: white;
-}
+
 .projectx-highlight {
   margin-left: 50%;
   margin-top: 72%;
@@ -476,7 +475,7 @@ h4 {
 .history-text p {
   margin-right: 30px;
   font-size: 16px;
-  line-height: 1.8;
+  line-height: 1.4;
   position: relative;
   top: 50%;
   left: 50%;
@@ -528,18 +527,18 @@ h4 {
 }
 .team-member-info {
   color: white;
-  background-color: rgba(80, 13, 22, 0.7);
+  background-color: rgba(131, 26, 40, 0.7);
   position: absolute;
   top: 0;
   left: 50%;
   transform: translateX(-50%);
   transition: all 0.4s ease;
-  padding: 20px;
+  padding: 10px;
   text-align: center;
 }
+
 .team-member-info p {
-  font-size: 16px;
-  line-height: 1.5;
+  font-size: 15px;
 }
 
 #contact-slider {
@@ -564,8 +563,8 @@ h4 {
   overflow: hidden;
   width: 100%;
   margin-top: 20px;
-  margin-left: 200px;
-  margin-right: 200px;
+  margin-left: 100px;
+  margin-right: 100px;
 }
 
 .gallery-slider-item {
@@ -577,7 +576,7 @@ h4 {
 .gallery-slider-item img {
   width: 33.33%;
   float: left;
-  height: 700px;
+  height: 800px;
 }
 
 @keyframes slide-animation {
@@ -650,7 +649,7 @@ h4 {
 
 /*----- MEDIA QUERIES-----*/
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 1000px) {
   .menu li a {
     padding: 27px 27px;
     font-size: 20px;
@@ -658,9 +657,17 @@ h4 {
   }
 
   .caption h1 {
-    color: red;
+    color: green;
     font-size: 32px;
     letter-spacing: 2px;
+  }
+  .item-text p {
+    line-height: 1.3;
+    margin: 10px 5px;
+  }
+
+  .engine-text {
+    font-size: 13px;
   }
 
   footer .fa {
@@ -680,4 +687,165 @@ h4 {
   .inspect-body .container .col2 {
     width: 100%;
   }
+  .projectx-info {
+    position: relative;
+    text-align: left;
+    top: 57%;
+    line-height: 1.7;
+    padding-left: 1%;
+  }
+
+  .projectx-highlight {
+    margin-left: 50%;
+    margin-top: 2%;
+    display: inline-block;
+    background-color: #840909;
+    padding: 24px;
+  }
+
+  .history-body .col2 {
+    flex-direction: column;
+    width: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .team-member:hover .team-member-info,
+  .team-title {
+    font-size: 14px;
+  }
+  .team-title h1 {
+    font-size: 16px;
+  }
+  .team-member-info {
+    padding: 15px;
+  }
+
+  .team-member-info p {
+    font-size: 10px;
+    line-height: 1;
+  }
+
+  .gallery-slider {
+    
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  
+  .gallery-slider-item img {
+    
+    height: 450px;
+  }
+  header .container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  header .logo {
+    margin: 0 auto;
+  }
+  .features-body .container {
+    flex-direction: column;
+
+  }  
+  .features-body .container .col3 {
+    width: 70%;
+    margin: 0 auto;
+  }
+  
+  
+}
+
+@media screen and (max-width: 760px) {
+  .caption h1 {
+    color: red;
+    font-size: 28px;
+    letter-spacing: 2px;
+    
+  }
+
+  #main-slider {
+    height:580px;
+  }
+
+  .features-body .container {
+    flex-direction: column;
+
+  }  
+  .features-body .container .col3 {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .engine-body .container {
+    flex-direction: column;
+
+  }  
+  .engine-body .container .col2 {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .engine-text {
+    font-size: 20px;
+  }
+  footer .container {
+    flex-direction: column;
+
+  }  
+  footer .container .col3 {
+    width: 80%;
+    margin: 0 auto;
+  }
+   .inspect-body .container .col2 {
+     padding-left: 0;
+     padding-right: 0;
+   }
+   #projectx .container-fluid {
+    margin-top: 30px;
+    height: 500px;
+    background: url("../img/proje.jpg") center center no-repeat;
+    background-size: cover;
+  }
+
+  .projectx-info {
+    position: relative;
+    text-align: left;
+    top: 27%;
+    line-height: 1;
+    padding-left: 1%;
+  }
+
+  .projectx-highlight {
+    margin-left: 50%;
+    margin-top: 2%;
+    display: inline-block;
+    background-color: #840909;
+    padding: 24px;
+  }
+  .projectx-title {
+    font-size: 18px;
+    letter-spacing: 1.5px;
+  }
+
+  .projectx-button {
+    padding: 10px 20px;
+}
+
+.team-body .container-fluid {
+  flex-direction: column;
+
+}  
+.team-body .container-fluid .col3 {
+  width: 80%;
+  margin: 0 auto;
+}
+.team-member p{
+  font-size: 22px;
+}
+.team-title h2{
+  font-size: 24px;
+}
+.team-title h1 {
+  font-size: 42px;
+}
 }
