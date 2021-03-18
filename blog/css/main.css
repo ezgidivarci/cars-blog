@@ -89,8 +89,8 @@ header .logo img {
 }
 
 .menu li a {
-  padding: 27px 33px;
-  font-size: 22px;
+  padding: 22px 27px;
+  font-size: 18px;
   letter-spacing: 2px;
   display: block;
   text-decoration: none;
@@ -207,7 +207,7 @@ header .logo img {
 }
 .image-over {
   display: block;
-  width: 100%;
+  width: 80%;
   height: auto;
 }
 
@@ -226,7 +226,7 @@ header .logo img {
 .engine-overlay2 {
   position: absolute;
   bottom: 0;
-  left: 100%;
+  left: 80%;
   right: 0;
   background-color: rgba(80, 13, 22, 0.7);
   overflow: hidden;
@@ -236,11 +236,11 @@ header .logo img {
 }
 
 .engine-container:hover .engine-overlay {
-  width: 100%;
+  width: 80%;
 }
 .engine-container:hover .engine-overlay2 {
-  width: 100%;
-  left: 0;
+  width: 80%;
+  left: 0%;
 }
 
 .engine-text {
@@ -259,13 +259,13 @@ footer {
 }
 
 .footer-item img {
-  height: 120px;
-  margin-bottom: 40px;
+  height: 100px;
+  margin-bottom: 30px;
 }
 
 footer h3 {
   color: white;
-  font-size: 28px;
+  font-size: 20px;
 
   letter-spacing: 1px;
 }
@@ -292,7 +292,7 @@ footer p {
   text-decoration: none;
   color: #95a5a6;
   letter-spacing: 2px;
-  font-size: 25px;
+  font-size: 20px;
   line-height: 40px;
   transition: all 0.5s ease;
 }
@@ -309,13 +309,13 @@ footer p {
 
 /* CARS */
 #cars-slider {
-  height: 350px;
+  height: 250px;
   background: url("../img/parallax.jpg") center center no-repeat;
   background-size: cover;
 }
 
 #cars-caption {
-  height: 350px;
+  height: 250px;
   background: rgba(0, 0, 0, 0.7);
 }
 
@@ -338,11 +338,11 @@ footer p {
 .inspect-text {
   width: 60%;
   padding-left: 10px;
-  line-height: 1.8;
+  line-height: 1.4;
 }
 .date {
   color: #333;
-  font-size: 16px;
+  font-size: 13px;
   font-style: italic;
 }
 h4 {
@@ -367,7 +367,7 @@ h4 {
 
 #projectx .container-fluid {
   margin-top: 30px;
-  height: 800px;
+  height: 600px;
   background: url("../img/proje.jpg") center center no-repeat;
   background-size: cover;
 }
@@ -375,7 +375,7 @@ h4 {
   display: flex;
   background: rgba(0, 0, 0, 0.6);
   width: 100%;
-  height: 800px;
+  height: 600px;
 }
 .projectx-info {
   position: relative;
@@ -386,7 +386,7 @@ h4 {
 }
 .projectx-title {
   color: #e7c9e2;
-  font-size: 22px;
+  font-size: 17px;
   letter-spacing: 4px;
 }
 .projectx-button {
@@ -394,7 +394,7 @@ h4 {
   background-color: #840909;
   cursor: pointer;
   color: white;
-  padding: 20px 40px;
+  padding: 10px 20px;
   margin-top: 50px;
   letter-spacing: 2px;
   transition: all 0.5s ease;
@@ -423,13 +423,13 @@ h4 {
 }
 /* ABOUT */
 #about-slider {
-  height: 350px;
+  height: 250px;
   background: url("../img/about3.jpg") center center no-repeat;
   background-size: cover;
 }
 
 #about-caption {
-  height: 350px;
+  height: 250px;
   background: rgba(0, 0, 0, 0.7);
 }
 #history {
@@ -542,13 +542,13 @@ h4 {
 }
 
 #contact-slider {
-  height: 350px;
+  height: 250px;
   background: url("../img/phonex.jpg") center center no-repeat;
   background-size: cover;
 }
 
 #contact-caption {
-  height: 350px;
+  height: 250px;
   background: rgba(0, 0, 0, 0.7);
 }
 #gallery {
@@ -576,7 +576,7 @@ h4 {
 .gallery-slider-item img {
   width: 33.33%;
   float: left;
-  height: 800px;
+  height: 550px;
 }
 
 @keyframes slide-animation {
@@ -651,18 +651,18 @@ h4 {
 
 @media screen and (max-width: 1000px) {
   .menu li a {
-    padding: 27px 27px;
-    font-size: 20px;
+    padding: 21px 21px;
+    font-size: 16px;
     letter-spacing: 1px;
   }
 
   .caption h1 {
     color: green;
-    font-size: 32px;
+    font-size: 28px;
     letter-spacing: 2px;
   }
   .item-text p {
-    line-height: 1.3;
+    line-height: 1.2;
     margin: 10px 5px;
   }
 
@@ -674,10 +674,10 @@ h4 {
     font-size: 24px;
   }
   footer h3 {
-    font-size: 16px;
+    font-size: 14px;
   }
   footer p {
-    font-size: 14px;
+    font-size: 12px;
     line-height: normal;
   }
   .inspect-body .container {
@@ -759,14 +759,18 @@ h4 {
   }
 
   #main-slider {
-    height: 580px;
+    height: 420px;
+  }
+  #main-caption {
+    height: 420px;
+    background: rgba(0, 0, 0, 0.5);
   }
 
   .features-body .container {
     flex-direction: column;
   }
   .features-body .container .col3 {
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
   }
 
@@ -793,7 +797,7 @@ h4 {
   }
   #projectx .container-fluid {
     margin-top: 30px;
-    height: 500px;
+    height: 380px;
     background: url("../img/proje.jpg") center center no-repeat;
     background-size: cover;
   }
@@ -811,11 +815,11 @@ h4 {
     margin-top: 2%;
     display: inline-block;
     background-color: #840909;
-    padding: 24px;
+    padding: 18px;
   }
   .projectx-title {
-    font-size: 18px;
-    letter-spacing: 1.5px;
+    font-size: 13px;
+    letter-spacing: 1.2px;
   }
 
   .projectx-button {
@@ -830,12 +834,12 @@ h4 {
     margin: 0 auto;
   }
   .team-member p {
-    font-size: 22px;
+    font-size: 18px;
   }
   .team-title h2 {
-    font-size: 24px;
+    font-size: 20px;
   }
   .team-title h1 {
-    font-size: 42px;
+    font-size: 36px;
   }
 }
