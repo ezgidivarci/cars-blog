@@ -386,7 +386,7 @@ h4 {
 }
 .projectx-title {
   color: #e7c9e2;
-  font-size: 17px;
+  font-size: 14px;
   letter-spacing: 4px;
 }
 .projectx-button {
@@ -410,16 +410,16 @@ h4 {
   margin-top: 72%;
   display: inline-block;
   background-color: #840909;
-  padding: 24px;
+  padding: 18px;
 }
 .container-fluid .col2 {
   padding: 0;
 }
 .projectx-detail li {
   color: white;
-  letter-spacing: 3px;
+  letter-spacing: 1.2px;
   font-style: oblique;
-  font-weight: 300;
+  font-weight: 100;
 }
 /* ABOUT */
 #about-slider {
@@ -661,6 +661,13 @@ h4 {
     font-size: 28px;
     letter-spacing: 2px;
   }
+  #main-slider {
+    height: 320px;
+  }
+  #main-caption {
+    height: 320px;
+    background: rgba(0, 0, 0, 0.5);
+  }
   .item-text p {
     line-height: 1.2;
     margin: 10px 5px;
@@ -690,7 +697,7 @@ h4 {
   .projectx-info {
     position: relative;
     text-align: left;
-    top: 57%;
+    top: 20%;
     line-height: 1.7;
     padding-left: 1%;
   }
@@ -759,10 +766,10 @@ h4 {
   }
 
   #main-slider {
-    height: 420px;
+    height: 220px;
   }
   #main-caption {
-    height: 420px;
+    height: 220px;
     background: rgba(0, 0, 0, 0.5);
   }
 
@@ -782,7 +789,7 @@ h4 {
     margin: 0 auto;
   }
   .engine-text {
-    font-size: 20px;
+    font-size: 15px;
   }
   footer .container {
     flex-direction: column;
@@ -805,9 +812,13 @@ h4 {
   .projectx-info {
     position: relative;
     text-align: left;
-    top: 27%;
+    top: 20%;
     line-height: 1;
     padding-left: 1%;
+  }
+  .projectx-info iframe {
+    width: 180px;
+    height: 80px;
   }
 
   .projectx-highlight {
@@ -841,5 +852,91 @@ h4 {
   }
   .team-title h1 {
     font-size: 36px;
+  }
+  .gallery-slider-item img {
+    height: 280px;
+  }
+  .form-shape {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  header .logo img {
+    display: block;
+    height: 80px;
+  }
+  .menu li a {
+    padding: 15px 15px;
+    font-size: 13px;
+    letter-spacing: 1px;
+  }
+  .caption h1 {
+    font-size: 18px;
+    letter-spacing: 1.5px;
+  }
+  #main-caption p {
+    font-size: 16px;
+    letter-spacing: 1.2px;
+  }
+
+  #main-slider {
+    height: 190px;
+  }
+  #main-caption {
+    height: 190px;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  #cars-caption {
+    height: 190px;
+    background: rgba(0, 0, 0, 0.7);
+  }
+  #contact-caption {
+    height: 190px;
+    background: rgba(0, 0, 0, 0.7);
+  }
+  #about-caption {
+    height: 190px;
+    background: rgba(0, 0, 0, 0.7);
+  }
+
+  .features-body .container .col3 {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .item-text p {
+    line-height: 1.2;
+    font-size: 11px;
+  }
+  .engine-text {
+    font-size: 10px;
+  }
+  .projectx-info iframe {
+    width: 180px;
+    height: 80px;
+  }
+  .team-member:hover .team-member-info,
+  .team-title {
+    font-size: 10px;
+  }
+  .team-title h1 {
+    font-size: 12px;
+  }
+  .team-member-info {
+    padding: 5px;
+  }
+
+  .team-member-info p {
+    font-size: 6px;
+    line-height: 1;
+  }
+
+  .gallery-slider {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  .gallery-slider-item img {
+    height: 240px;
   }
 }
